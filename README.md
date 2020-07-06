@@ -1,3 +1,3 @@
 # Tic Tac Toe
 
-Codealong project for the introduction to redux
+https://trusting-hugle-a77c8e.netlify.app/
