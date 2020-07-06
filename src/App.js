@@ -15,8 +15,8 @@ export const App = () => {
   return (
     <Provider store={store}>
       <main>
-        <Board />
         <Stats />
+        <Board />
       </main>
     </Provider>
   )

@@ -11,7 +11,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-image: url(assets/liquid-cheese.svg);
+  background-attachment: fixed;
+  background-size: cover;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -19,8 +21,8 @@ code {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
 }
 
 .board {
@@ -28,13 +30,13 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   gap: 2vw;
-  padding: 5vw;
+  padding: 5vw 20vw;
 }
 
 .square {
   padding-bottom: 100%;
-  background: #ccc;
-  border: 1px solid green;
+  background: rgba(255, 255, 255, 0.472);
+  border: 1px solid rgb(221, 52, 47);
   display: block;
   appearance: none;
   cursor: pointer;
@@ -56,4 +58,14 @@ main {
 .stats {
   padding-top: 5vw;
   font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.next-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
 }
